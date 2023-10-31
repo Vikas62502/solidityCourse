@@ -14,4 +14,8 @@ contract Adder {
         uint256 result = a * b;
         return result;
     }
+    function div(uint256 a, uint256 b) public pure returns (uint256) {
+        uint256 result = a / b;
+        return result;
+    }
 }
