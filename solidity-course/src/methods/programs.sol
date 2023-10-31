@@ -18,4 +18,10 @@ contract Adder {
         uint256 result = a / b;
         return result;
     }
+
+    contract Concatenator {
+      function concat(string memory a, string memory b) public pure returns (string memory) {
+        return string(abi.encodePacked(a, b));
+    }
+}
 }
